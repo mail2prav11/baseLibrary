@@ -1,0 +1,31 @@
+<app-header>Colors</app-header>
+<div class="each-page-holder">
+  <div class="row">
+    <div class="col-md-4 mb-5" *ngFor="let color of colors">
+      <h5>{{ color.colorType }}</h5>
+      <ul class="colors-blocks">
+        <li
+          *ngFor="let item of color.values"
+          [ngStyle]="{ 'background-color': item.value }"
+          [ngClass]="{
+            border: item.value.toLowerCase() === '#ffffff'
+          }"
+        >
+          <p
+            class="d-flex justify-content-between mb-0"
+            [ngClass]="{ 'text-dark': item.value.toLowerCase() === '#ffffff' }"
+          >
+            <span [ngClass]="{ 'text-dark': item.label.includes('light') }">{{
+              item.label
+            }}</span>
+            <span
+              class="text-uppercase"
+              [ngClass]="{ 'text-dark': item.label.includes('light') }"
+              >{{ item.value }}</span
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

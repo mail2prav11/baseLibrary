@@ -1,0 +1,40 @@
+<div class="page-holder d-flex flex-column">
+  <div class="page-body">
+    <div class="side-nav">
+      <div class="introduction">
+        <img src="./assets/images/ge_monogram_primary_white_RGB.png" alt="" />
+        <p>
+          <b>UI DOCS</b>
+        </p>
+        <div class="toggleBtn" (click)="toggleSidenav($event)" role="button" type="button"><i class="fa fa-bars"></i></div>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <h3>Elements</h3>
+          <ul>
+            <li>
+              <a routerLink="./colors" routerLinkActive="active">Colors</a>
+            </li>
+            <li><a routerLink="./buttons" routerLinkActive="active">Buttons</a></li>
+            <li><a routerLink="./">Accordion</a></li>
+            <li><a routerLink="./">Cards</a></li>
+            <li><a routerLink="./">Form Elements</a></li>
+            <li><a routerLink="./">Grid</a></li>
+            <li><a routerLink="./">Header</a></li>
+            <li><a routerLink="./">Flag</a></li>
+            <li><a routerLink="./">Divider</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-body">
+      <!-- <div class="header bg-info">
+        <h1 class="display-4 text-light">Buttons</h1>
+      </div> -->
+
+      <div class="content-body">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

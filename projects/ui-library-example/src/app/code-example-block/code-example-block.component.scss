@@ -1,0 +1,24 @@
+.code-example-block {
+  border: 1px solid #e0dede;
+  border-radius: 3px;
+  box-shadow: 1px 5px 6px -5px #adadad;
+  .example-header {
+    background: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    h5,
+    span {
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+  .visual-element {
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #e0dede;
+  }
+  .example-code {
+    background: #fbfbfb;
+  }
+}

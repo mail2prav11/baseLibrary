@@ -1,0 +1,17 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.each-page-holder {
+  padding: 50px;
+  background: #e2e8ed;
+}
+
+hr{
+  border-top: 1px solid #889aa5;
+}

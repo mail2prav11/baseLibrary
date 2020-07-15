@@ -1,0 +1,271 @@
+<app-header>Buttons</app-header>
+<div class="each-page-holder">
+  <h2>Api</h2>
+  <div
+    class="alert alert-light align-items-center p-3 d-flex mb-4 justify-content-between"
+  >
+    <pre
+      class="mb-0"
+    >import <b>&#123; ButtonModule &#125;</b> from 'projects/ui-library/src/public-api';</pre>
+    <button class="btn btn-sm btn-info" #btn (click)="copyText('import {ButtonModule} from projects/ui-library/src/public-api', btn)">
+      Copy
+    </button>
+  </div>
+
+  <div class="row mt-4">
+    <div class="left-content col-md-9 mt-5">
+      <div class="block mb-4" id="defaultButton" #defaultButtons>
+        <h5>Types</h5>
+        <hr>
+        <div class="code-example-block" >
+          <div class="example-header align-items-center">
+            <h5>Default Button</h5>
+            <button
+              class="btn"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <span class="fa fa-angle-down"></span>
+            </button>
+          </div>
+          <div class="visual-element" #code1>
+            <button class="mm-button">Default</button>
+          </div>
+        </div>
+        <div class="example-code collapse" id="collapseExample">
+          <div class="card card-body">
+            <button class="cpy-btn btn btn-light btn-sm border" #btn1 (click)="copyCode(code1,btn1)">Copy</button>
+<pre class="mb-0">&lt;button class="mm-button"&gt;Default Button&lt;/button&gt;</pre
+            >
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="block mb-4" #colorButtons>
+          <div class="code-example-block">
+            <div class="example-header align-items-center">
+              <h5>Button Colors</h5>
+              <button
+                class="btn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#exm2"
+                aria-expanded="false"
+                aria-controls="exm2"
+              >
+                <span class="fa fa-angle-down"></span>
+              </button>
+            </div>
+            <div class="visual-element" #code2>
+                <button class="mm-button">Default</button>
+                <button class="mm-button mm-button--light">Light</button>
+                <button class="mm-button mm-button--primary">Primary</button>
+                <button class="mm-button mm-button--secondary">Secondary</button>
+                <button class="mm-button mm-button--negative">Negative</button>
+                <button class="mm-button mm-button--positive">Positive</button>
+                <button class="mm-button mm-button--warning">Warning</button>
+                <button class="mm-button mm-button--risk">Risk</button>
+            </div>
+          </div>
+          <div class="example-code collapse" id="exm2">
+            <div class="card card-body">
+                <button class="cpy-btn btn btn-light btn-sm border" #btn2 (click)="copyCode(code2,btn2)">Copy</button>
+                <pre class="mb-0">&lt;button class="mm-button mm-button--white"&gt;White&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--light"&gt;light&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--dark"&gt;Dark&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--primary"&gt;primary&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--danger"&gt;danger&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--success"&gt;success&lt;/button&gt;</pre
+                >
+                <pre class="mb-0">&lt;button class="mm-button mm-button--warning"&gt;warning&lt;/button&gt;</pre
+                >
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="block mb-4" id="sizeButton" #buttonSizes>
+          <div class="code-example-block">
+            <div class="example-header align-items-center">
+              <h5>Button Sizes</h5>
+              <button
+                class="btn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#exm3"
+                aria-expanded="false"
+                aria-controls="exm3"
+              >
+                <span class="fa fa-angle-down"></span>
+              </button>
+            </div>
+            <div class="visual-element" #code3>
+                <button class="mm-button mm-button--large">Large</button>
+                <button class="mm-button mm-button--medium">Medium</button>
+                <button class="mm-button mm-button--small">Small</button>
+            </div>
+          </div>
+          <div class="example-code collapse" id="exm3">
+            <div class="card card-body">
+                <button class="cpy-btn btn btn-light btn-sm border" #btn3 (click)="copyCode(code3,btn3)">Copy</button>
+<pre class="mb-0">&lt;button class=&quot;mm-button mm-button--large&quot;&gt;Large&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--medium&quot;&gt;Medium&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--small&quot;&gt;Small&lt;/button&gt;</pre>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="block mb-4" id="iconButton" #iconButtons>
+          <div class="code-example-block">
+            <div class="example-header align-items-center">
+              <h5>Button With icons</h5>
+              <button
+                class="btn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#exm4"
+                aria-expanded="false"
+                aria-controls="exm4"
+              >
+                <span class="fa fa-angle-down"></span>
+              </button>
+            </div>
+            <div class="visual-element" #code4>
+                <button class="mm-button mm-button--has-icon">
+                    <span><img src="./assets/images/filter_grey.png" alt=""/></span
+                    >Default
+                  </button>
+                  <button class="mm-button mm-button--light mm-button--has-icon">
+                    <span><img src="./assets/images/filter_grey.png" alt=""/></span
+                    >Light
+                  </button>
+                  <button class="mm-button mm-button--primary mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Primary
+                  </button>
+                  <button class="mm-button mm-button--secondary mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Secondary
+                  </button>
+                  <button class="mm-button mm-button--negative mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Negative
+                  </button>
+                  <button class="mm-button mm-button--positive mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Positive
+                  </button>
+                  <button class="mm-button mm-button--warning mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Warning
+                  </button>
+                  <button class="mm-button mm-button--risk mm-button--has-icon">
+                    <span><img src="./assets/images/filter_white.png" alt=""/></span
+                    >Risk
+                  </button>
+            </div>
+          </div>
+          <div class="example-code collapse" id="exm4">
+            <div class="card card-body">
+                <button class="cpy-btn btn btn-light btn-sm border" #btn4 (click)="copyCode(code4,btn4)">Copy</button>
+<pre class="mb-0">&lt;button class=&quot;mm-button mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_grey.png&quot; alt=&quot;&quot;/&gt;&lt;/span&gt;
+  Default
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--light mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_grey.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Light
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--primary mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Primary
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--secondary mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Secondary
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--negative mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Negative
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--positive mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Positive
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--warning mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Warning
+&lt;/button&gt;
+&lt;button class=&quot;mm-button mm-button--risk mm-button--has-icon&quot;&gt;
+  &lt;span&gt;&lt;img src=&quot;./assets/images/filter_white.png&quot; alt=&quot;&quot;/&gt;&lt;/span
+  &gt;Risk
+&lt;/button&gt;</pre>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="block mb-4" id="groupButton" #buttonGroup>
+          <div class="code-example-block">
+            <div class="example-header align-items-center">
+              <h5>Button Group</h5>
+              <button
+                class="btn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#exm5"
+                aria-expanded="false"
+                aria-controls="exm5"
+              >
+                <span class="fa fa-angle-down"></span>
+              </button>
+            </div>
+            <div class="visual-element" #code5>
+                <div class="mm-button-group">
+                    <button class="mm-button mm-button--light">Button One</button>
+                    <button class="mm-button mm-button--light">Button Two</button>
+                    <button class="mm-button mm-button--light">Button Three</button>
+                  </div>
+            </div>
+          </div>
+          <div class="example-code collapse" id="exm5">
+            <div class="card card-body">
+                <button class="cpy-btn btn btn-light btn-sm border" #btn5 (click)="copyCode(code5,btn5)">Copy</button>
+<pre class="mb-0">&lt;div class=&quot;mm-button-group&quot;&gt;
+    &lt;button class=&quot;mm-button mm-button--light&quot;&gt;Button One&lt;/button&gt;
+    &lt;button class=&quot;mm-button mm-button--light&quot;&gt;Button Two&lt;/button&gt;
+    &lt;button class=&quot;mm-button mm-button--light&quot;&gt;Button Three&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="right-content col-md-3 border-left">
+      <div class="mt-5">
+        <ul class="nav flex-column" id="myScrollspy">
+            <li class="nav-item">
+              <button class="btn btn-link" (click)="scrollToElement(defaultButtons)">Default Button</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link" (click)="scrollToElement(colorButtons)">Button colors</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link" (click)="scrollToElement(buttonSizes)">Button Sizes</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link" (click)="scrollToElement(iconButtons)">Icon Buttons</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link" (click)="scrollToElement(buttonGroup)">Button Group</button>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

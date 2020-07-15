@@ -1,0 +1,115 @@
+@import "../variables";
+@mixin button-color($background, $color) {
+  background: $background;
+  color: $color;
+}
+.mm-button {
+  padding: 10px 8px;
+  min-width: 80px;
+  border: 0;
+  cursor: pointer;
+  background: $light;
+  color: $primary-500;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $primary-100;
+  }
+  &:active {
+    background: $primary-200;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  // colors start
+  &.mm-button--primary {
+    @include button-color($primary, $white);
+    &:hover {
+      @include button-color($primary-400, $white);
+    }
+  }
+  &.mm-button--light {
+    @include button-color($light-100, $primary-300);
+    border: 1px solid $primary-300;
+    &:hover {
+      @include button-color($secondary-200, $white);
+      border: 1px solid $secondary-200;
+    }
+  }
+  &.mm-button--secondary {
+    @include button-color($secondary-400, $white);
+    &:hover {
+      @include button-color($secondary-200, $white);
+    }
+    &:active {
+      @include button-color($secondary-100, $white);
+    }
+  }
+  &.mm-button--negative {
+    @include button-color($negative, $white);
+    &:hover {
+      @include button-color($negative-dark, $white);
+    }
+  }
+  &.mm-button--positive {
+    @include button-color($positive, $white);
+    &:hover {
+      @include button-color($positive-dark, $white);
+    }
+  }
+  &.mm-button--warning {
+    @include button-color($warning, $white);
+    &:hover {
+      @include button-color($warning-dark, $white);
+    }
+  }
+  &.mm-button--risk {
+    @include button-color($risk, $white);
+    &:hover {
+      @include button-color($risk-dark, $white);
+    }
+  }
+  // colors end
+  // size start
+  &.mm-button--small {
+    padding: 6px 12px;
+    min-width: auto;
+    font-size: 12px;
+  }
+  &.mm-button--medium {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  &.mm-button--large {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+  // for icon buttons
+  &.mm-button--has-icon {
+    position: relative;
+    padding-left: 24px;
+    span {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+// button group
+.mm-button-group {
+  .mm-button {
+    margin-right: 0;
+    &:first-child {
+      border-right: 0;
+    }
+    &:last-child {
+      border-left: 0;
+    }
+  }
+}
